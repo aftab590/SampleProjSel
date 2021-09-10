@@ -34,7 +34,7 @@ public class PageDriverFactory {
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("chrome.switches","--disable-extensions");
-            //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/BrowserDriver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/BrowserDriver/chromedriver");
             driver = new ChromeDriver(options);
             driver.get(url);
             System.out.println("Browser launched wth url");
